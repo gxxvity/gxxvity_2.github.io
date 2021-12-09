@@ -1,0 +1,202 @@
+<!DOCTYPE html><!--22161096신예린-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800&display=swap');
+
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins',sans-serif;
+    }
+
+    section {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      background: black;
+      /*display: block;*/
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    section header{
+      position: absolute;
+      top: 13px;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      padding: 0 ;
+    }
+
+
+    .menu ul li{
+      z-index: 10;
+      list-style: none;
+      margin-right: 20px;
+      display: inline;
+      color: white;
+      text-decoration: none;
+    }
+    .menu ul li a{
+      text-decoration: none;
+      font-size: 15px;
+      position: relative;
+    }
+    .menu ul li a:before{
+      content: "";
+      height: 4px;
+      width: 0;
+      background-color: #fff;
+      border-radius: 10px;
+      transition: 0.5s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .menu ul li a:hover::before{
+      width: 100%;
+      background-color: #f04F9D;
+      width: 100%;
+    }
+    .menu ul li a:link { color: white; text-decoration: none;}
+    .menu ul li a:visited {text-decoration : none; color : white;}
+    .menu ul li a:hover{text-decoration : none; color : #f04F9D;}
+    .menu ul li a:active{text-decoration : none;color : white;}
+
+    .container{
+      height:800px;
+      margin : 0 auto;
+      display : flex;
+      justify-content : center;
+      align-items : center;
+      text-align : center;
+      margin-top : 80px;
+    }
+
+    .name{
+      color :white;
+      margin : 0 auto;
+      font-size :1em;
+      color: #f04F9D;
+      text-align : center;
+    }
+
+            button{
+              width: 160px;
+              height:60px;
+              background-color: #f04F9D;
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              border-radius: 50px;
+              text-decoration: none;
+              margin-left: 20px;
+              margin-top: 18px;
+            }
+
+            button:focus{
+              outline: 0;
+            }
+
+            button:visited{
+              text-decoration : none;
+              color : white;
+            }
+
+            button:active{
+              text-decoration : none;
+              color : white;
+            }
+
+            button:hover{
+              background-color: rgba(251, 194, 226, 1);
+              color: #f04F9D;
+              cursor: pointer;
+              text-decoration : none;
+            }
+      .but{
+        position : absolute;
+        left :50%;
+        top : 80%;
+        transform : translate(-55%,-80%)
+      }
+    footer{
+      color: white;
+      background-color: #f04F9D;
+      height: auto;
+      margin-top: 150px;
+      padding-top: 40px;
+      padding-bottom:40px;
+      }
+
+      .footer_content{
+        text-align: center;
+      }
+
+      .footer_content h3{
+        color: white;
+        margin-bottom: 5px;
+      }
+      .footer_content p{
+        font-size: 12px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h2 class="logo">
+          <a href="index.html">
+            <img src="source/logo2.png" width="60px">
+          </a>
+        </h2>
+
+        <div class="menu">
+          <ul>
+            <li><a href="thevol.html">The Volunteers</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="photo.html">photo</a></li>
+            <li><a href="video.html">Video</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="box">
+          <video src="source/let.mp4" autoplay controls></video>
+        </div><!--box-->
+
+      </div><!--container-->
+
+        <div class="name">
+          <h2>The Volunteers (더 발룬티어스) ‘Let me go!’ MV</h2>
+        </div>
+
+        <div class="but">
+            <a href="https://youtu.be/8Y5dL2XdIMo">
+              <button>
+                Youtube
+              </button>
+            </a>
+        </div>
+
+    <footer>
+      <div class="footer_content">
+        <h3>BLUE VINYL</h3>
+        <p>kaywon university of art and design
+         <br>
+        Digital Media Design <br> 22161096 SHIN YE RIN
+        </p>
+          <p>ⓒ 2021. SHIN YE RIN all rights reserved</p>
+      </div>
+
+    </footer>
+</section>
+  </body>
+</html>
